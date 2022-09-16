@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="341.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Рассчёт итоговой суммы при желании заплатить чаевые" textAlignment="CENTER" wrappingWidth="275.103515625">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <TilePane hgap="60.0" layoutX="100.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefColumns="3" prefHeight="39.0" prefRows="70" prefTileHeight="100.0" prefTileWidth="100.0" prefWidth="301.0" tileAlignment="TOP_CENTER" vgap="100.0" VBox.vgrow="ALWAYS">
+      <children>
+          <Button onAction="#onHelloButtonClick" prefHeight="31.0" prefWidth="105.0" text="Сделать расчёт" textAlignment="CENTER" />
+         <TextField fx:id="Calculation" alignment="TOP_RIGHT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+      </children>
+   </TilePane>
+   <Line endX="100.0" startX="400.0" stroke="#a88f36" />
+   <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefColumns="0" prefHeight="90.0" prefRows="0" prefTileHeight="30.0" prefTileWidth="170.0" prefWidth="292.0" tileAlignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+      <children>
+         <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Итоговая сумма при 15%: " wrappingWidth="168.970703125" TilePane.alignment="TOP_CENTER">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Text>
+         <Text fill="#ee1dbd" strokeType="OUTSIDE" strokeWidth="0.0" text="Итоговая сумма при 10%:">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Text>
+         <Text fill="#2a1e61" strokeType="OUTSIDE" strokeWidth="0.0" text="Итоговая сумма при 3%:" />
+         <Label fx:id="Percent15" alignment="TOP_RIGHT" contentDisplay="RIGHT" text="Percent15" />
+         <Label fx:id="Percent10" text="Percent10" />
+         <Label fx:id="Percent3" text="Percent3" />
+      </children></TilePane>
+</VBox>
