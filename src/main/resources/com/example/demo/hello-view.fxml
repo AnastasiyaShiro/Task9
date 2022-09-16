@@ -18,7 +18,7 @@
    <TilePane hgap="60.0" layoutX="100.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefColumns="3" prefHeight="39.0" prefRows="70" prefTileHeight="100.0" prefTileWidth="100.0" prefWidth="301.0" tileAlignment="TOP_CENTER" vgap="100.0" VBox.vgrow="ALWAYS">
       <children>
           <Button onAction="#onHelloButtonClick" prefHeight="31.0" prefWidth="105.0" text="Сделать расчёт" textAlignment="CENTER" />
-         <TextField fx:id="Calculation" alignment="TOP_RIGHT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+         <TextField fx:id="Calculate" alignment="TOP_RIGHT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" text="1000" />
       </children>
    </TilePane>
    <Line endX="100.0" startX="400.0" stroke="#a88f36" />
@@ -37,6 +37,6 @@
          <Text fill="#2a1e61" strokeType="OUTSIDE" strokeWidth="0.0" text="Итоговая сумма при 3%:" />
          <Label fx:id="Percent15" alignment="TOP_RIGHT" contentDisplay="RIGHT" text="Percent15" />
          <Label fx:id="Percent10" text="Percent10" />
-         <Label fx:id="Percent3" text="Percent3" />
+         <Label fx:id="Percent5" text="Percent3" />
       </children></TilePane>
 </VBox>
